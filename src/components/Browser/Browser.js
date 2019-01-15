@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import browserCheck from './browser-check';
 
+
 const getBrowsersArr = () => {
   const browsers = [
     { name: 'mobile', isCurrentBrowser: browserCheck.isMobile() },
@@ -86,5 +87,9 @@ Browser.defaultProps = {
   mobile: false,
   blink: false
 };
+
+
+console.log('%c Oh, hello! Didn\'t see you there! If you\'re reading this, welcome to the Netherworld! Also... if you\'re hiring... hire me?', 'background: #222; color: #bada55');
+
 
 export default Browser;
