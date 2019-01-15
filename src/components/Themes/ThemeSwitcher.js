@@ -8,10 +8,10 @@ class ThemeSwitcher extends Component {
   constructor(props) {
     super(props);
     const allThemes = getThemes();
-    const firstTimeThemes = allThemes.filter(theme => theme.firstTime === true);
+    const activeThemes = allThemes.filter(theme => theme.active === true);
 
     this.state = {
-      theme: firstTimeThemes[Math.floor((Math.random() * (firstTimeThemes.length)))]
+      theme: activeThemes[Math.floor((Math.random() * (activeThemes.length)))]
     }
 
     this.switchTheme = this.switchTheme.bind(this);
@@ -53,7 +53,7 @@ class ThemeSwitcher extends Component {
         {`
           body {
             background-color: ${theme.bgPrimary};
-            body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+            body, h1, h2, h3, h4, h5, h6, p, ol, ul, a:visited {
               color: ${theme.textPrimary}
               color: ${theme.textSecondary}
               color: ${theme.textEmphasis}

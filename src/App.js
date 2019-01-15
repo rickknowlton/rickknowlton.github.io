@@ -4,7 +4,7 @@ import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ParallaxBackground from './components/ParallaxBackground';
 import ScrollTop from './components/ScrollTop';
-import ThemeSwitcher from './components/ThemeSwitcher';
+import ThemeChange from './components/Themes';
 import Browser from './components/Browser';
 import Footer from './components/Footer';
 
@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="dev-landing-page">
-        <ThemeSwitcher>
+        <ThemeChange>
           <Browser except firefox>
             <ParallaxBackground />
           </Browser>
@@ -22,7 +22,7 @@ class App extends Component {
           <PortfolioPage />
           <ScrollTop />
           <Footer />
-        </ThemeSwitcher>
+        </ThemeChange>
       </div>
     );
   }

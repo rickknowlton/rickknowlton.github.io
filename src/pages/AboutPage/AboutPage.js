@@ -5,7 +5,7 @@ import './style.scss';
 
 const AboutPage = (props, context) => {
   const {
-    theme: { colorPrimary, colorHighlight, bgPrimary, textPrimary, textSecondary }
+    theme: { colorPrimary, colorHighlight, bgPrimary, textPrimary}
   } = context;
 
   return (

@@ -17,6 +17,9 @@ const Footer = (props, context) => {
           ::selection {
             background-color: ${colorHighlight};
           }
+          a {
+            color: ${textPrimary};
+          }          
         `}
       </style>
         <div><span className="highlight">Crafted with <span role="img" aria-label="heart">❤️</span> by <a href="https://github.com/rickknowlton" target="_blank" rel="noopener noreferrer"> Rick Knowlton</a></span></div>

@@ -28,8 +28,8 @@ const LandingPage = (props, context) => {
                     'Clean Code Advocate',
                     'UX/UI Enthusiast',
                     'Level 10 High Elf Sorcerer']}
-                    typeSpeed={40}
-                    backSpeed={50}
+                    typeSpeed={55}
+                    backSpeed={65}
                     loop='true'                     
                 />
             </div>
