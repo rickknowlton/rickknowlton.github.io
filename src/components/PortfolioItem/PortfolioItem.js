@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './style';
+import './style.scss';
 
 const PortfolioItem = (props, context) => {
   const { theme: { colorPrimary, textAlternate } } = context;

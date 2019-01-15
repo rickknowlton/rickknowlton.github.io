@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { toTop as scrollToPageTop } from '@utils/scroll';
+import { toTop as scrollToPageTop } from '../../utils/scroll';
 
 import './style.scss';
 

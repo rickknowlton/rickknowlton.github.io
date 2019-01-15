@@ -1,10 +1,10 @@
 import React from 'react';
 import Typed from 'react-typed';
 import PropTypes from 'prop-types';
-import SocialIcons from '@components/SocialIcons';
-import Nav from '@components/Nav';
-import ScrollToNext from '@components/ScrollToNext';
-import BrowserNotes from '@components/BrowserNotes';
+import SocialIcons from '../../components/SocialIcons';
+import Nav from '../../components/Nav';
+import ScrollToNext from '../../components/ScrollToNext';
+import BrowserNotes from '../../components/BrowserNotes';
 
 import './style.scss';
 
