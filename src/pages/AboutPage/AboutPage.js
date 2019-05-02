@@ -43,7 +43,9 @@ const AboutPage = (props, context) => {
           </div>
         </div>
       </div>
+      <div className="arrow-wrap">
       <ScrollToNext pageSelector=".portfolio-page" />
+      </div>
     </div>
   );
 };

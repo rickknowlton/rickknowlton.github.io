@@ -1,0 +1,107 @@
+@import '../../styles/breakpoints';
+$border-radius: 2px;
+
+.contact-wrapper {
+    padding: 1rem;
+    width: 80%;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.contact-form {
+    padding: 1rem;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2.5rem 0;
+    z-index: 10;
+
+  @include breakpoint-small-down {
+    width: 40rem;
+  }
+
+  &:hover {
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
+  }
+
+  &__title {
+    font-family: 'Varela Round', sans-serif;
+    flex: 1;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: right;
+
+    @include breakpoint-small-down {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.25rem;
+
+    @include breakpoint-small-down {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__icon {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+
+    svg {
+      margin: 0 0.25rem;
+    }
+  }
+
+  &__links {
+    padding: 0 0 0.75rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.875rem;
+    font-weight: 400;
+
+    a {
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid transparent;
+      
+      &:hover {
+        cursor: pointer;
+        border-bottom: 2px solid inherit;
+      }
+    }
+  }
+  .content-grid {
+    flex: auto;
+  }
+
+  .contact-wrapper {
+    
+    .contact-content {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      
+      @include breakpoint-small-down {
+        font-size: 1rem;
+      }
+}
+  }
+
+  .submit {
+      align-content: right;
+  }
+}
+  

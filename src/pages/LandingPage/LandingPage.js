@@ -37,7 +37,9 @@ const LandingPage = (props, context) => {
           <SocialIcons />
         </div>
       </main>
+      <div className="arrow-wrap">
       <ScrollToNext pageSelector=".about-page" />
+      </div>
     </div>
   );
 };
